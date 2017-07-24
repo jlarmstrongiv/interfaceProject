@@ -38,19 +38,19 @@ public abstract class Soldier {
         this.serialNumber = serialNumber;
     }
 
-    public void sleep() {
-        System.out.println("snore");
+    public String sleep() {
+        return "snore";
     }
 
-    public void eat() {
-        System.out.println("chew");
+    public String eat() {
+        return "chew";
     }
 
-    public void trudge() {
-        System.out.println("trudge");
+    public String trudge() {
+        return "trudge";
     }
     // Speak will be extended
-    public void speak() {
-        System.out.println("Hi");
+    public String speak() {
+        return "hi";
     }
 }

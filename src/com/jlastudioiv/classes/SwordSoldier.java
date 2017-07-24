@@ -2,12 +2,16 @@ package com.jlastudioiv.classes;
 
 import com.jlastudioiv.interfaces.ISword;
 
-public class SwordSoldier implements ISword{
-    public void maimOrSeriouslyInjure() {
-        System.out.println("Luke, I am your Father");
+public class SwordSoldier extends Soldier implements ISword{
+    public String maimOrSeriouslyInjure() {
+        return "Luke, I am your Father";
     }
     @Override
-    public void cutVegetables() {
-        System.out.println("Yummy Yummy");
+    public String cutVegetables() {
+        return "Yummy Yummy";
+    }
+    @Override
+    public String speak() {
+        return "excalibur!";
     }
 }
